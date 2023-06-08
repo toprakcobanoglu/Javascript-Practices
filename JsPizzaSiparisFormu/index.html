@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pizza Siparis Sayfasi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h3>Pizza Siparis Formu</h3>
+    <form action="" id="formPizza">
+        <label for="listePizza" size="4">Pizza boyutunu seciniz:</label>
+        <select name="" id="listePizza">
+            <option value="20">Kucuk Boy</option>
+            <option value="30">Orta Boy</option>
+            <option value="40">Buyuk Boy</option>
+            <option value="50">Super Boy</option>
+        </select>
+        <label for="grupEkMalzeme">Ek malzeme seciniz:</label>
+        <span>
+            <label for="mal1">Siyah Zeytin</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal1">
+
+            <label for="mal2">Mısır</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal2">
+
+            <label for="mal3">Mantar</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal3">
+
+            <label for="mal4">Sucuk</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal4">
+
+            <label for="mal5">Sosis</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal5">
+
+            <label for="mal6">Ekstra Peynir</label>
+            <input type="checkbox" name="grupEkMalzeme" id="mal6">
+        </span>
+        <span>
+            <label for="kodTrue">Indirim kodum var</label>
+            <input type="radio" name="grupIndirim" id="kodTrue" value="Aktif" onchange="toogle();">
+
+            <label for="kodFalse">Indirim kodum yok</label>
+            <input type="radio" name="grupIndirim" id="kodFalse" value="Pasif" onchange="toogle();" checked>
+        </span>
+        <label for="txtIndirimKodu">Indirim kodunuzu giriniz</label>
+        <input type="text" name="" id="txtIndirimKodu" disabled>
+
+        <input type="button" value="Hesapla" id="btnHesapla" onclick="pizzaHesapla();">
+    </form>
+    <h5 id="sonuc"></h5>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body onload="yillar()">
+    <h3>Tasit Vergisi Hesaplama Formu</h3>
+    <form action="#" id="vergiForm">
+        <label for="aracTipi">Arac Tipini Seciniz</label>
+        <select name="" id="aracTipi" size="2">
+            <option value="motorsiklet">Motorsiklet</option>
+            <option value="otomobil">Otomobil</option>
+        </select>
+        <label for="motorGucu">Aracin motor gucunu seciniz</label>
+        <span>
+            <input type="radio" name="motorGucu" id="secenek1" value="999cc">
+            <label for="secenek1">999cc altı</label>
+
+            <input type="radio" name="motorGucu" id="secenek2" value="1000cc-1600cc">
+            <label for="secenek1">1000cc-1600cc arası</label>
+
+            <input type="radio" name="motorGucu" id="secenek3" value="1601cc-2000cc">
+            <label for="secenek1">1601cc-2000cc arası</label>
+
+            <input type="radio" name="motorGucu" id="secenek3" value="2001cc">
+            <label for="secenek1">2001cc üstü</label>
+        </span>
+        <label for="aracYili">Arac model yilini seciniz</label>
+        <select name="" id="aracYili" style="width: 100px;">
+            <option value="default">Yil seciniz</option>
+        </select>
+        <input type="button" value="Vergi Hesapla" onclick="vergiHesapla()">
+    </form>
+    <h5 id="sonuc"></h5>
+</body>
+</html>

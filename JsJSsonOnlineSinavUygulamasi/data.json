@@ -1,0 +1,21 @@
+
+{
+    "sorular":[
+        {
+            "soru":"Aşağıdakilerden hangisi javascript ile açılır pencerede yazdırma fonksiyonudur ?",
+            "secenekA":"alert()",
+            "secenekB":"document.write()",
+            "secenekC":"console.log()",
+            "secenekD":"document.querySelector()",
+            "cevap":"secenekA"
+        },
+        {
+            "soru":"Aşağıdakilerden hangisi javascript'in ile harici veri saklama yapılarından değildir ?",
+            "secenekA":"Javascript Object",
+            "secenekB":"JSON",
+            "secenekC":"MySQL",
+            "secenekD":"MongoDB",
+            "cevap":"secenekA"
+        }
+    ]
+}

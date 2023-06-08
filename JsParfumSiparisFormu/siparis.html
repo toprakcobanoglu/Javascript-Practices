@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Urun Siparis Formu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='code.js'></script>
+</head>
+<body onload="urunAdediDoldur();urunTaksidiDoldur();">
+    <h3>Parfum Siparis Formu</h3>
+    <form action="#" id="formUrun">
+        <label for="urunTipi">Urun tipini seciniz</label>
+        <span>
+            <input type="radio" name="urunTipi" id="erkekUrunleri" value="E" onchange="urunleriGetir();">
+            <label for="erkekUrunleri">Erkek Urunleri</label>
+
+            <input type="radio" name="urunTipi" id="kadinUrunleri" value="K" onchange="urunleriGetir();">
+            <label for="kadinUrunleri">Kadin Urunleri</label>
+        </span>
+        <label for="urunListesi">Urun secimini yapiniz</label>
+        <select name="" id="urunListesi" size="4">
+            <!--Empty List-->
+        </select>
+
+        <label for="urunAdedi">Urun adedini seciniz</label>
+        <select name="" id="urunAdedi">
+            <!--Empty List-->
+        </select>
+
+        <label for="urunTaksidi">Taksit sayisini seciniz</label>
+        <select name="" id="urunTaksidi">
+            <!--Empty List-->
+        </select>
+        <input type="button" value="Hesapla" id="btnAraToplam" onclick="hesapla();">
+
+        <label for="txtBirimFiyat">Urunun birim fiyati</label>
+        <input type="text" name="" id="txtBirimFiyat" disabled>
+
+        <label for="txtAraToplam">Ara Toplam Tutari</label>
+        <input type="text" name="" id="txtAraToplam" disabled>
+
+        <label for="txtKargo">Kargo Ucreti</label>
+        <input type="text" name="" id="txtKargo" disabled>
+    </form>
+    <h5 id="sonuc"></h5>
+</body>
+</html>
